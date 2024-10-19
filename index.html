@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kdrama Quiz | Discover Your Next Drama</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main">
+        <header class="header">
+            <a href="#" class="logo">KdramaQuiz</a>
+            <nav class="navbar">
+                <a href="#" class="active">Home</a>
+                <a href="#">About</a>
+                
+            </nav>
+        </header>
+
+        <div class="container">
+            <section class="quiz-section">
+                <div class="quiz-box">
+                    <h1>Find Your Next Kdrama!</h1>
+                    <div class="quiz-header">
+                        <span>Answer a few questions, and we'll recommend a Kdrama just for you!</span>
+                    </div>
+
+                    <h2 class="question-text">How would you describe your ideal plot?</h2>
+                    <div class="option-list">
+                      
+                    </div>
+
+                    <div class="quiz-footer">
+                        <span class="question-total">1 of 5 Questions</span>
+                        <button class="next-btn">Next</button>
+                    </div>
+                </div>
+
+                <div class="result-box">
+                
+                    <div class="result-container">
+                        <img id="drama-poster" src="" alt="Kdrama Poster" style="width:200px;">
+                        <p class="recommendation-text">We think you’ll love <strong id="drama-name">"[Drama Name]"</strong>!</p>
+                        <p id="drama-plot"></p>
+                    </div>
+                    <div class="buttons">
+                        <button class="tryAgain-btn" onclick="tryAgain()">Try Again</button>
+                        <button class="goHome-btn" onclick="goHome()">Go To Home</button>
+                    </div>
+                </div>
+                
+            </section>
+
+            <section class="home">
+                <div class="home-content">
+                    <h1>Kdrama Quiz</h1>
+                    <p>Not sure what to watch next? Take this quiz, and we'll help you discover your next binge-worthy Kdrama based on your preferences!</p>
+                    <button class="start-btn">Start Quiz</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="popup-info">
+        <h2>Quiz Guide</h2>
+        <span class="info">1. Choose the answer that best describes your preferences.</span>
+        <span class="info">2. We’ll recommend a Kdrama based on your answers.</span>
+        <span class="info">3. Enjoy watching your new favorite Kdrama!</span>
+
+        <div class="btn-group">
+            <button class="info-btn exit-btn">Exit Quiz</button>
+            <a href="#" class="info-btn continue-btn">Continue</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="questions.js"></script>
+    <script src="answers.js"></script>
+    <script src="recommendations.js"></script>
+
+</body>
+</html>
